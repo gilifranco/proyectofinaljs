@@ -74,11 +74,11 @@ const renderProducts = (products, target) => {
 
     products.map(product => {
         acumulador += `
-        <div class="card m-2" style="width: 18rem;">
+        <div class="card m-2 productosorden " style="width: 15rem;">
             <img src="${product.imagen}" class="card-img-top" alt="${product.nombre}">
-            <div class="card-body">
+            <div class="card-body cardsproductos">
                 <h5 class="card-title">${product.nombre}</h5>
-                <p class="card-text">Cantidad: $${product.cantidad}</p>
+                <p class="card-text">Cantidad: ${product.cantidad}</p>
                 <p class="card-text">Precio: $${product.valor}</p>
                 <button ref=${product.id} class="btn btn-primary button">Comprar</button>
             </div>
@@ -106,7 +106,7 @@ const handleClick = (event) => {
             nombre: product.nombre,
             valor: product.valor,
             cantidad: 1,
-            imageURL: product.imageURL
+            imagen: product.imagen
         })
     }
     renderProducts(carrito, contenedorCarrito);

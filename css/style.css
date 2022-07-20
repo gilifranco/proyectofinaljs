@@ -1,10 +1,39 @@
+body{
+    background-color: #6B958C  ;
+}
 .header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+    color: black;
 }
 
 .bigicon {
     font-size: 35px;
     color: #36A0FF;
 }
+.productosorden {
+    justify-content: center;
+    
+}   
+.cardsproductos{
+    text-align: center;
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.diseñocarrito {
+    background-color: beige;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all .5s;
+    width: 4pc;
+}
+
