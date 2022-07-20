@@ -95,7 +95,13 @@ const renderProducts = (products, target) => {
 const handleClick = (event) => {
     const id = parseInt(event.target.getAttribute('ref'));
     const product = productos.find(producto => producto.id === id);
-    alert('compraste ' + product.nombre + ' por $' + product.valor);
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Agregado al carrito',
+      showConfirmButton: false,
+      timer: 1500
+    });
     
     if (carrito.some(el => el.id === product.id)) {
         const posicion = carrito.findIndex(el => el.id === product.id)
