@@ -134,4 +134,35 @@ input.addEventListener('input', buscar);
 
 renderProducts(productos, contenedor);
 
+// USAMOS FETCH PARA TRAER INFO DE UN .JSON LOCAL
+ const traerDeJSON = () => {
+                     // fetch devuelve una promesa que tiene que resolverse
+     const respuesta = fetch('./js/archivo.json')
+     respuesta
+    .then(res => res.json())
+     .then((res) => {
+         console.log(res);
+
+       products = res.productos
+
+         renderProducts(res.productos)
+     })
+ }
+
+ traerDeJSON();
+
+ const dibujarProductos = async () => {
+     loading = true
+     try {
+         const response = await callAPI('search', 'shampoo')
+         console.log(response);
+
+         return renderProducts(productos);
+     }
+     catch (err) {
+         console.log('error:', err);
+     } 
+ }
+
+ dibujarProductos();
 

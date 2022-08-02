@@ -1,0 +1,68 @@
+
+{ 
+    "productos": [
+    {
+      "id": 1,
+       "nombre": "Shampoo Neutro Bido",
+       "valor":  3000,
+       "cantidad": 25,
+       "imagen": "./img/producto1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Shampoo 1l Colores",
+      "valor": 750,
+       "cantidad": 25,
+       "imagen": "./img/producto2.jpg"
+    },
+    {
+      "id": 3,
+       "nombre": "Shampoo Argan",
+   "valor": 900,
+       "cantidad": 25,
+       "imagen": "./img/producto3.jpg"
+    },
+    {
+      "id": 4,
+       "nombre": "Shampoo 1l Colores",
+       "valor": 750,
+       "cantidad": 25,
+       "imagen": "./img/producto4.jpg"
+    },
+    {
+      "id": 5,
+       "nombre": "Shampoo 1l Colores",
+       "valor": 750,
+       "cantidad": 25,
+       "imagen": "./img/producto5.jpg"
+    },
+    {
+      "id": 6,
+       "nombre": "Shampoo 1l Colores",
+       "valor": 750,
+       "cantidad": 25,
+       "imagen":  "./img/producto6.jpg"
+    },
+    {
+      "id": 7,
+       "nombre": "Shampoo 1l Colores",
+       "valor": 750,
+       "cantidad": 25,
+       "imagen":  "./img/producto7.jpg"
+    },
+    {
+      "id": 8,
+       "nombre": "Shampoo 1l Colores",
+       "valor": 750,
+       "cantidad": 25,
+       "imagen": "./img/producto 8.jpg"
+    },
+    {
+      "id": 9,
+       "nombre": "Shampoo Acido en 5 Litros",
+       "valor": 3000,
+       "cantidad": 25,
+       "imagen":  "./img/producto9.jpg"
+    }
+   ]
+  }
